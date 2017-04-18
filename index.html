@@ -28,6 +28,36 @@
       <li>Bake for 45 minutes or until golden</li>
       <li>Finish with chopped fresh parsley and serve immediately</li>
     </ol>
+
+    <section>
+      <form action="/reviews" method="post">
+
+        <label for="reviewer">Reviewer</label>
+        <input id="reviewer" type="text" name="" value=""/>
+
+        <label for="rating">Rating</label>
+        <input type="text" name="rating" value="1" checked="checked"/>
+        <input type="text" name="rating" value="2"/>
+        <input type="text" name="rating" value="3"/>
+        <input type="text" name="rating" value="4"/>
+        <input type="text" name="rating" value="5"/>
+
+        <label for="cooking expertise">Cooking Expertise</label>
+        <select id="cooking expertise" name="">
+          <option disabled selected value="Select Cooking Expertise"></option>
+          <option value="Sometimes Cook"></option>
+          <option value="Cook Everyday"></option>
+          <option value="Cooking is a Hobby"></option>
+          <option value="Professional Chef"></option>
+        </select>
+
+        <label for="review">Review</label>
+        <textarea name="name" rows="8" cols="80">
+        </textarea>
+
+
+      </form>
+    </section>
   </body>
 </html>
 
