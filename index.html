@@ -1,64 +1,88 @@
 <html>
   <head>
-  <title>Kevin McCall Recipe</title>
+  <title>Jules' Stuffed Clams</title>
   </head>
   <body>
-    <h1>Shakshuka</h1>
-    <h2>Stuffed Clams</h2>
-    <ul>
-      <li><a name="ingredients"/>Ingredients</li>
-      <li><a name="instructions"/>Cooking Instructions</li>
-    </ul>
-    <h2>Description</h2>
-    <p>This traditional <a href="https://en.wikipedia.org/wiki/Stuffed_clam">Italian recipe</a> will take your tastebuds on a trip and have you craving more!</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Stuffed_clams_food_dinner_cooking.jpg/800px-Stuffed_clams_food_dinner_cooking.jpg"/>
-    <h2>Ingredients</h2>
-    <ul>
-      <li>Fresh, live clams</li>
-      <li>Breadcrumbs</li>
-      <li>Red bell peppers</li>
-      <li>Parsley</li>
-    </ul>
-    <h2>Cooking Instructions</h2>
-    <ol>
-      <li>Preheat oven to 375 degrees</li>
-      <li>Shuck clams, clean shells, and shells face up on baking tray</li>
-      <li>Mix chopped peppers and breadcrumbs in a bowl</li>
-      <li>Add clams, mix</li>
-      <li>Bake for 45 minutes or until golden</li>
-      <li>Finish with chopped fresh parsley and serve immediately</li>
-    </ol>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#instructions">Cooking Instructions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <h2 id="ingredients">Ingredients</h2>
+        <ul>
+          <li>Fresh, live clams</li>
+          <li>Breadcrumbs</li>
+          <li>Red bell peppers</li>
+          <li>Parsley</li>
+        </ul>
+      </aside>
 
     <section>
-      <form action="/reviews" method="post">
+      <h1>Stuffed Clams</h1>
 
-        <label for="reviewer">Reviewer</label>
-        <input id="reviewer" type="text" name="" value=""/>
+      <figure>
+        <img src="https://70c97aaea282a207d81b-f84eee09323602e80e90b9678fa5fc9b.ssl.cf5.rackcdn.com/wp-content/uploads/2007/11/stuffies-500.jpg" alt="Stuffed Clams Recipe">
+        <figcaption>
+          <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Stuffed_clams_food_dinner_cooking.jpg/800px-Stuffed_clams_food_dinner_cooking.jpg">Tradition of stuffed clams</a>
+        </figcaption>
+      </figure>
 
-        <label for="rating">Rating</label>
-        <input type="text" name="rating" value="1" checked="checked"/>
-        <input type="text" name="rating" value="2"/>
-        <input type="text" name="rating" value="3"/>
-        <input type="text" name="rating" value="4"/>
-        <input type="text" name="rating" value="5"/>
+      <h2 id="description">Description</h2>
+      <p>
+        Stuffed clams is a traditional Italian recipe.
+      </p>
 
-        <label for="cooking expertise">Cooking Expertise</label>
-        <select id="cooking expertise" name="">
-          <option disabled selected value="Select Cooking Expertise"></option>
-          <option value="Sometimes Cook"></option>
-          <option value="Cook Everyday"></option>
-          <option value="Cooking is a Hobby"></option>
-          <option value="Professional Chef"></option>
-        </select>
-
-        <label for="review">Review</label>
-        <textarea name="name" rows="8" cols="80">
-        </textarea>
-
-
-      </form>
+      <h2 id="instructions">Instructions</h2>
+      <ol>
+        <li>Preheat oven to 375 degrees</li>
+        <li>Shuck clams, clean shells, and shells face up on baking tray</li>
+        <li>Mix chopped peppers and breadcrumbs in a bowl</li>
+        <li>Add clams, mix</li>
+        <li>Bake for 45 minutes or until golden</li>
+        <li>Finish with chopped fresh parsley and serve immediately</li>
+      </ol>
     </section>
-  </body>
-</html>
 
-<!-- Julianne Costa, Stuffed Clams -->
+
+    <section id="reviews">
+      <h2>Reviews</h2>
+        <form action="/reviews" method="post">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name">
+
+          <label for="rating">Rating</label>
+          1<input type="radio" name="rating" value="1" checked>
+          2<input type="radio" name="rating" value="2">
+          3<input type="radio" name="rating" value="3">
+          4<input type="radio" name="rating" value="4">
+          5<input type="radio" name="rating" value="5">
+
+          <label for="expertise">Cooking Expertise</label>
+          <select id="expertise" name="expertise">
+            <option value="Select Cooking Expertise" disabled="true selected="true>Select Cooking Expertise</option>
+            <option value="Sometimes Cook">Sometimes Cook</option>
+            <option value="Cook Everyday">Cook Everyday</option>
+            <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+            <option value="Professional Chef">Professional Chef</option>
+          </select>
+
+          <label for="review">Review
+            <textarea name="review" rows="10" cols="30"></textarea>
+          </label>
+
+          <input type="submit" value="Submit Review">
+        </form>
+      </section>
+
+      <footer>
+        <p>Original Recipe by <a href=" SOME LINK ">Some Name</p>
+      </footer>
+
+</body>
+</html>
