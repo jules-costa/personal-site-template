@@ -27,3 +27,34 @@ a {
 html {
     background-color: lavenderblush;
 }
+
+input[type="radio"] {
+    cursor: pointer;
+    outline: none;
+    
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    outline: none;
+    background-color: gold;
+}
+
+input[type="submit"]:hover {
+    -webkit-filter: brightness(90%);
+}
+
+input[type="select"] {
+    cursor: pointer;
+    outline: none;
+}
+
+ol > li:nth-of-type(2n) {
+    background-color: lightgray;
+}
+
+h2 + div {
+    border-radius: 1px;
+    /* border-color: black; */
+    border-top: solid black;
+}
