@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 38;
+}
+
+h2 {
+    font-size: 32;
+}
+
+ul.ingredients-list {
+    list-style: square inside;
+}
+
+ol.directions-list {
+    background: lightcyan;
+    padding: 20;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    background-color: lavenderblush;
+}
