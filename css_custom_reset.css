@@ -10,5 +10,5 @@ select, option, textarea, footer {
   text-decoration: inherit;
   color: inherit;
   background: transparent;
-
+  vertical-align: baseline;
 }
