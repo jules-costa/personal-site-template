@@ -1356,13 +1356,13 @@
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #8cd1a8;
+		color: #3c9761;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #8cd1a8 !important;
+			color: #3c9761 !important;
 			text-decoration: none;
 		}
 
@@ -2546,7 +2546,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #8cd1a8;
+			background-color: #3c9761;
 			border: 0;
 			box-shadow: none;
 			color: #ffffff !important;
